@@ -2,7 +2,7 @@
 <div class="parent"> 
   <div class="container" [ngClass]="sigindiv ? 'active' :'' " id="container">
       <div class="form-container sign-up" >
-          <form (ngSubmit)="signupFormSubmit(signUpForm)" #signUpForm="ngForm" class="form">
+          <form (ngSubmit)="register()"  class="form">
               <h1>Create Account</h1>
               <div class="social-icons">
                   <a href="#" class="icon"><i class="bi bi-github"></i></a>
@@ -11,14 +11,14 @@
                   <a href="#" class="icon"><i class="bi bi-linkedin"></i></a>
               </div>
               <span>or use your email for registeration</span>
-              <input type="text" name="name" [(ngModel)]="signUpDetails.name" placeholder="Name" required>
-              <input type="email" name="email" [(ngModel)]="signUpDetails.email"  placeholder="Email" required>
-              <input type="password" name="password"  [(ngModel)]="signUpDetails.password" placeholder="Password" required>
+              <input type="text" name="name" [(ngModel)]="signUpDetails.name" placeholder="Name" required/>
+              <input type="email" name="email" [(ngModel)]="signUpDetails.email"  placeholder="Email" required/>
+              <input type="password" name="password"  [(ngModel)]="signUpDetails.password" placeholder="Password" required/>
               <button type="submit" (click)="register()">SIGN UP</button>
           </form>
       </div>
       <div class="form-container sign-in" >
-          <form (ngSubmit)="loginFormSubmit()">
+          <form  #logInForm="ngForm">
               <h1>LOG IN</h1>
               <div class="social-icons">
                   <a href="#" class="icon"><i class="bi bi-github"></i></a>
