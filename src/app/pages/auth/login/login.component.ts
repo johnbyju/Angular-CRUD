@@ -13,10 +13,18 @@ export class LoginComponent {
   sigindiv:boolean= true;
   signUpDetails :signup = new signup();
   loginDetails : login =new login();
-//---------authunticate---------
+
+ //---------authunticate---------
  
  constructor(){}
 
+ loginFunction(){
+  if(this.isloginValid()){
+    
+  }
+
+
+ }
  register() {
   if (this.isSignUpValid()) {
     if (this.signUpDetails.name.trim().toLocaleLowerCase() === '') {
@@ -39,14 +47,20 @@ export class LoginComponent {
   } else {
     console.log('Invalid signup details');
   }
+
   
 }
 isSignUpValid(): boolean  {
   return(
-    true
-    // this.signUpDetails.name.trim().toLocaleLowerCase() !== '' &&
-    // this.signUpDetails.email.trim().toLocaleLowerCase() !== '' &&
-    // this.signUpDetails.password.trim().toLocaleLowerCase() !== ''
+    this.signUpDetails.name.trim().toLocaleLowerCase() !== '' &&
+    this.signUpDetails.email.trim().toLocaleLowerCase() !== '' &&
+    this.signUpDetails.password.trim().toLocaleLowerCase() !== ''
+  );
+}
+isloginValid () :boolean {
+  return(
+    this.loginDetails.email.trim().toLocaleLowerCase() !== ''&& 
+    this.loginDetails.password.trim().toLocaleLowerCase() !== '' 
   );
 }
   
