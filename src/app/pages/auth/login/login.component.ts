@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, viewChild } from '@angular/core';
-import { FormsModule, } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule,],
+  imports: [CommonModule, FormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
 })
 export class LoginComponent {
   sigindiv: boolean = true;
@@ -16,43 +17,46 @@ export class LoginComponent {
 
   //---------authunticate---------
 
-  constructor() { }
+  constructor() {}
 
   loginFunction() {
     if (this.isloginValid()) {
       const getUser = localStorage.getItem('users');
       if (getUser !== null) {
-        const checkUser = JSON.parse(getUser)
+        const checkUser = JSON.parse(getUser);
         const matchUser = checkUser.find((user: signup) => {
-          return user.email.trim().toLocaleLowerCase() === this.loginDetails.email.trim().toLocaleLowerCase() &&
-            user.password.trim().toLocaleLowerCase() === this.loginDetails.password.trim().toLocaleLowerCase()
+          return (
+            user.email === this.loginDetails.email.trim().toLocaleLowerCase() &&
+            user.password === this.loginDetails.password.trim().toLocaleLowerCase()
+          );
         });
+        console.log(matchUser);
+        console.log('console log checked');
 
         if (matchUser) {
-          alert('login succesfully ') // and move the user into the site accessble
+          alert('login succesfully '); // and move the user into the site accessble
+        } else {
+          alert('invalid user details');
         }
-        else {
-          alert('invalid user details')
-        }
-      }
-      else {
-        alert('no user registerd it ')
+      } else {
+        alert('no user registerd it ');
       }
       this.loginDetails = new login();
+    } else {
+      alert(this.sweet());
     }
-    else {
-      alert('enter the email and password correctly')
-    }
-
-
   }
+
   register() {
+    debugger;
     if (this.isSignUpValid()) {
       if (this.signUpDetails.name.trim().toLocaleLowerCase() === '') {
         alert('Name field is empty');
       } else if (this.signUpDetails.email.trim().toLocaleLowerCase() === '') {
         alert('Email field is empty');
-      } else if (this.signUpDetails.password.trim().toLocaleLowerCase() === '') {
+      } else if (
+        this.signUpDetails.password.trim().toLocaleLowerCase() === ''
+      ) {
         alert('Password field is empty');
       } else {
         const users = localStorage.getItem('users');
@@ -64,15 +68,12 @@ export class LoginComponent {
           const userArray = [this.signUpDetails];
           localStorage.setItem('users', JSON.stringify(userArray));
         }
+        alert('registerd Successfully ');
       }
       this.signUpDetails = new signup();
-    } 
-     else {
+    } else {
       alert('Kindly Enter your details');
     }
-   
-
-
   }
   isSignUpValid(): boolean {
     return (
@@ -87,20 +88,25 @@ export class LoginComponent {
       this.loginDetails.password.trim().toLocaleLowerCase() !== ''
     );
   }
-
+  sweet(){
+    Swal.fire({
+      title: 'Error!',
+      text: 'Do you want to continue',
+      icon: 'error',
+      confirmButtonText: 'Cool'
+    })
+  }
 }
 
 export class signup {
-
   name: string;
   email: string;
   password: string;
 
   constructor() {
-    this.name = "";
-    this.email = "";
-    this.password = "";
-
+    this.name = '';
+    this.email = '';
+    this.password = '';
   }
 }
 
@@ -108,7 +114,7 @@ export class login {
   email: string;
   password: string;
   constructor() {
-    this.email = "";
-    this.password = "";
+    this.email = '';
+    this.password = '';
   }
 }
