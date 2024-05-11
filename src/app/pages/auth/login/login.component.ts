@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { NavbarComponent } from '../../navbar/navbar.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,NavbarComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })

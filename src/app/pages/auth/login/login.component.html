@@ -1,4 +1,4 @@
-
+<app-navbar></app-navbar>
 <div class="parent"> 
   <div class="container" [ngClass]="sigindiv ? 'active' :'' " id="container">
       <div class="form-container sign-up" >
@@ -29,7 +29,7 @@
               <span>or use your email password</span>
               <input type="email" name="email"  placeholder="Email" required>
               <input type="password" name="password"  placeholder="Password" required>
-              <a href="#">→ Forget Your Password? ←</a>
+              <a routerLink="/forgotPassword" routerLinkActive="">→ Forget Your Password? ←</a>
               <button type="submit" (click)="loginFunction()">LOG IN</button>
           </form>
       </div>

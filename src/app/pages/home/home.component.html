@@ -1,22 +1,370 @@
+<!-- <app-home></app-home>
+<app-login></app-login> -->
+<app-navbar></app-navbar>
 <div class="container-fluid">
-  <nav class="navbar">
-      <a class="navbar-brand" href="#">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-        />
-        LOGO
-      </a>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">contact us</a>
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-      <button class="btn btn-outline-success my-0 my-sm-0" type="submit">
-        Search
-      </button>
-  </nav>
-</div>
+    <section class="bannerArea">
+        <div class="container custom-container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-6 order-2 order-xl-0">
+                    <div class="bannerArea__wrapper" data-aos="fade-up">
+                        <h1 class="bannerArea__title">
+                            Make degitalized World !
+                        </h1>
+                        <p class="bannerArea__brief">
+                            Praesent non pharetra lorem. Quisque vitae eros ut dui egestas ultrices et quis odio. Praesent vitae tincidunt lacus, sed pulvinar velit.
+                        </p>
+                        <div class="bannerArea__buttons">
+                            <a class="primary__button primary__button-bgPrimary" href="services.html">
+                                Our Services
+                            </a>
+                            <div class="overlay-playbutton">
+                                <a class="popup-video video-border" href="https://www.youtube.com/watch?v=hlWiI4xVXKY">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 order-1 order-xl-0">
+                    <div class="bannerArea__image" data-aos="fade-left" data-aos-delay="500">
+                        <img src="assets/img/banner/banner.png" alt="banner-image" />
+                    </div>
+                </div>
+            </div>
+            <div class="mask-group">
+                <img class="mask1" src="assets/img/mask/layerShape-01.png" alt="mask" />
+                <img class="mask2" src="assets/img/mask/layerShape-02.png" alt="mask" />
+                <img class="mask3" src="assets/img/mask/downShape.png" alt="mask" />
+                <img class="mask4" src="assets/img/mask/layers-dot.png" alt="mask" />
+            </div>
+        </div>
+    </section>
+    <!--  BRAND AREA -->
+    <section class="brand-area">
+        <div class="container">
+            <div class="small-section text-center">
+                <h3>As Seen On</h3>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="brand-slider-active d-flex ">
+                        <div class="single-brand p-5">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="brand logo" class="img-fluid h-50 w-75" />
+                        </div>
+                        <div class="single-brand p-5">
+                            <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="brand logo"  class="h-50"/>
+                            <div class="text-danger text-center m">Angular</div>
+                        </div>
+                        <div class="single-brand p-5">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Adobe_Corporate_logo.svg/2560px-Adobe_Corporate_logo.svg.png" class="h-50 w-100" alt="brand logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ABOUT-INFO AREA -->
+    <section class="about-info">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-info-image" data-aos="fade-right" data-aos-offset="400" data-aos-delay="500">
+                        <img src="assets/img/about/about_info.svg" alt="Presenting A Project" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-info-text" data-aos="fade-up" data-aos-offset="400">
+                        <h2>
+                          End-to-End Encryption
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptatem.
+                        </p>
+                        <div class="about-info-project d-flex justify-content-between flex-wrap">
+                            <div class="project-rating mb-20">
+                                <h3>4.8</h3>
+                                <ul class="project-rating-star d-flex">
+                                   <li><i class="fas fa-star"></i></li>
+                                   <li><i class="fas fa-star"></i></li>
+                                   <li><i class="fas fa-star"></i></li>
+                                   <li><i class="fas fa-star"></i></li>
+                                   <li><i class="fas fa-star"></i></li>
+                                  
+                                </ul>
+                                <p>8,784 Ratings</p>
+                            </div>
+                            <div class="project-information mb-20">
+                                <h3>7K+</h3>
+                                <p>Successfully</p>
+                                <p>Completed Projects</p>
+                            </div>
+                            <div class="project-information mb-20">
+                                <h3>17+</h3>
+                                <p>Expert</p>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mask-group">
+                <img class="mask1" src="assets/img/mask/mask06.png" alt="mask" />
+            </div>
+        </div>
+    </section>
+    <!--  SPECIAL SERVICES AREA -->
+    <section class="special-services">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Our Special Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item mb-50" data-aos="fade-up">
+                        <div class="special-services-image special-services-image-bg-one">
+                            <img src="assets/img/services/special_services01.svg" alt="Special Services 01" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>Email Marketing</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item mb-50" data-aos="fade-up"      data-aos-delay="500">
+                        <div class="special-services-image special-services-image-bg-two">
+                            <img src="assets/img/services/special_services02.svg" alt="Special Services 02" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>Web Design</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item mb-50" data-aos="fade-up"      data-aos-delay="600">
+                        <div class="special-services-image special-services-image-bg-three">
+                            <img src="assets/img/services/special_services03.svg" alt="Special Services 03" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>UI Design</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item mb-50" data-aos="fade-up"      data-aos-delay="700">
+                        <div class="special-services-image special-services-image-bg-four">
+                            <img src="assets/img/services/special_services04.svg" alt="Special Services 04" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>Web Development</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item mb-50" data-aos="fade-up"      data-aos-delay="800">
+                        <div class="special-services-image special-services-image-bg-five">
+                            <img src="assets/img/services/special_services05.svg" alt="Special Services 05" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>Graphic Design</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="special-services-item" data-aos="fade-up" data-aos-delay="900">
+                        <div class="special-services-image special-services-image-bg-six">
+                            <img src="assets/img/services/special_services06.svg" alt="Special Services 06" class="img-fluid" />
+                        </div>
+                        <div class="special-services-text">
+                            <h5>Support</h5>
+                            <p>
+                                Duis quis eleifend sem, non malesuada lectus. Curabitur feugiat rutrum mi rutrum lore ultricies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__mask">
+                <img src="assets/img/mask/mask09.svg" alt="Icon" class="img-fluid mask_01" />
+            </div>
+        </div>
+    </section>
+    <!--  CALL TO ACTION AREA -->
+    <section class="callto-action">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12 order-2 order-lg-1">
+                    <div class="callto-action-text" data-aos="fade-up">
+                        <h2>Have Any Project On Mind? Contact Us!</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue ipsum id neque placerat, et tempus nibh accumsan. Maecenas hendrerit faucibus ante. Fusce placerat laoreet ligula, non porttito.
+                        </p>
+                        <a href="contact.html" class="primary__button primary__button-bgPrimary">Send Message</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 order-1 order-lg-2">
+                    <div class="callto-action-image" data-aos="fade-left" data-aos-delay="500">
+                        <img src="assets/img/action/image.svg" alt="Call To Action" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="callto-action-mask" >
+            <img data-aos="fade-down" data-aos-easing="linear" src="assets/img/mask/leftMask.svg" alt="Icon" class="img-fluid first-mask" />
+        </div>
+    </section>
+    <!--  PRICE AREA -->
+    <section class="price-area">
+        <div class="container">
+            <div class="section-title text-center mb-50">
+                <h2 class="mb-20" data-aos="fade-up">Choose Your Plan</h2>
+                <p>
+                    Sed sit amet suscipit diam, vel iaculis nunc. Mauris interdum sollicitudin ex. Sed sit amet felis id dolor blandit pellentesque. Praesent varius euismod velit, non tincidunt lacu.
+                </p>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="price-box h-100" data-aos="fade-up">
+                        <div class="price-icon text-center mb-20">
+                            <img src="assets/img/price/Free.png" alt="icon" />
+                        </div>
+                        <div class="price-title text-center mb-35">
+                            <h4>Free Plan</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Unlimited Bandwith</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> 25 GB Storage</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                  <span>  Works on All Devices</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                  <span>  Connect Anywhere</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-link text-center">
+                            <h3>Free</h3>
+                            <a class="primary__button primary__button-bgPrimary" href="javascript:void(0)">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="price-box h-100" data-aos="fade-up" data-aos-delay="500">
+                        <div class="price-icon text-center mb-20">
+                            <img src="assets/img/price/Standard.png" alt="icon" />
+                        </div>
+                        <div class="price-title text-center mb-35">
+                            <h4></h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Unlimited Bandwith</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                  <span>  25 GB Storage</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                    <span> Works on All Devices</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                  <span>  Connect Anywhere</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Works on All Devices</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                    <span>  Connect Anywhere</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-link text-center">
+                            <h4><span></span></h4>
+                            <a class="primary__button primary__button-bgPrimary" href="javascript:void(0)">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="price-box h-100" data-aos="fade-up" data-aos-delay="700">
+                        <div class="price-icon text-center mb-20">
+                            <img src="assets/img/price/Premium.png" alt="icon" />
+                        </div>
+                        <div class="price-title text-center mb-35">
+                            <h4></h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Unlimited Bandwith</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                    <span>25 GB Storage</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Works on All Devices</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Connect Anywhere</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                   <span> Works on All Devices</span>
+                                </li>
+                                <li>
+                                    <img class="mr-1" src="assets/img/icon/Path.svg" alt="icon" />
+                                  <span>Connect Anywhere</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-link text-center">
+                            <h4><span></span></h4>
+                            <a class="primary__button primary__button-bgPrimary" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mask-group3">
+                <img class="mask7" src="assets/img/mask/penta-02.svg" alt="maskshape" />
+                <img class="mask9" src="assets/img/mask/dotblue.svg" alt="mask" />
+                <img data-aos="fade-left" data-aos-easing="linear" class="mask6" src="assets/img/mask/circle-01.svg" alt="mask" />
+                <img class="mask8" src="assets/img/mask/circlePenta.svg" alt="mask" />
+            </div>
+        </div>
+    </section>
+  </div>
+  
+<!-- <router-outlet></router-outlet> -->
